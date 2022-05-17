@@ -30,14 +30,10 @@
 <script>
 
     const btn = document.getElementById('btn');
+    btn.style.background="#F00";
 
-    if (Math.random() < 0.25) {
-        window.yaParams = {btn_color: "blue"};
-        btn.style.background="#00F";
-    } else {
-        btn.style.display = 'none';
-    }
+    window.yaParams = {btn_color: "red"};
 
-    ym(88810656, 'params', window.yaParams||{});
+    ym(88810656, 'params', window.yaParams);
     
 </script>
