@@ -28,12 +28,17 @@
 
 
 <script>
-    
+
     const btn = document.getElementById('btn');
-    
-    window.yaParams = {btn_color: "blue"};
-    btn.style.background="#00F";
-    
-    ym(88809772, 'params', window.yaParams);
+
+    if (Math.random() < 0.25) {
+        window.yaParams = {btn_color: "blue"};
+        btn.style.background="#00F";
+        ym(88809772, 'params', window.yaParams);
+    } else {
+        btn.style.display = 'none';
+    }
+
+    ym(88809772, 'params', window.yaParams||{});
     
 </script>
