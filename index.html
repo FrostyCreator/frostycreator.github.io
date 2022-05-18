@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
-        ym(88810656, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-        });
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J38N9DQ832"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J38N9DQ832');
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/88810656" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,17 +18,6 @@
     <title>main</title>
 </head>
 <body>
-    <button id="btn" onclick="ym(88810656, 'reachGoal', 'button_click'); return true;">Кнопка</button>
+    <button id="btn">Кнопка</button>
 </body>
 </html>
-
-
-<script>
-
-    const btn = document.getElementById('btn');
-    btn.style.background="#F00";
-    
-    window.yaParams = {btn_color: "red"};
-    ym(88810656, 'params', window.yaParams);
-    
-</script>
