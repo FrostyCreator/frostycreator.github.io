@@ -31,9 +31,11 @@
 
     const btn = document.getElementById('btn');
     btn.style.background="#F00";
+    btn.addEventListener( "click" , () => {
+        ym(88810656,'reachGoal','button_click');
+    });
 
     window.yaParams = {btn_color: "red"};
-
     ym(88810656, 'params', window.yaParams);
     
 </script>
